@@ -13,10 +13,7 @@ public class Retangulo {
         /* sobrecarga: metodos iguais tipos diferentes de parâmetros */
         public Retangulo(Double x1, Double y1, Double x2, Double y2, Double x3, Double y3, Double x4, Double y4) {
                 this.base = new Reta(x1,y1,x2,y2);
-                Reta reta2 = new Reta(x3,y3,x4,y4);
-                Double tamanhoReta2 = reta2.getTamanho();
-                Double tamanhoReta1 = this.base.getTamanho();
-                
+                this.altura = new Reta(x3,y3,x4,y4);
         }
     // Métodos de acesso
     public Reta getBase() {
@@ -47,7 +44,14 @@ public class Retangulo {
     }
     
     public Double getPerimetro() {
-        return (2 * this.base.getTamanho()) + (2 * this.altura.getTamanho());
+        return (2 * (this.base.getTamanho() + this.altura.getTamanho()));
     }
 
+    public boolean isRetangulo() {
+        if ((this.base.getP1().getDistancia(this.altura.getP1()) == 0) || (this.base.getP2().getDistancia(this.altura.getP1()) == 0) ||
+                (this.base.getP1().getDistancia(this.altura.getP2()) == 0) || (this.base.getP2().getDistancia(this.altura.getP2()) == 0)) {
+
+        };
+        return false;
+    }
 }
