@@ -40,5 +40,14 @@ public class Retangulo {
     public Double getPerimetro() {
         return (2 * (this.base.getTamanho() + this.altura.getTamanho()));
     }
+    
+    // TODO: VERIFICANDO SE É RETÂNGULO
+    public boolean isRetangulo() {
+        if ((this.base.getP1().getDistancia(this.altura.getP1()) == 0) || (this.base.getP2().getDistancia(this.altura.getP1()) == 0) ||
+                (this.base.getP1().getDistancia(this.altura.getP2()) == 0) || (this.base.getP2().getDistancia(this.altura.getP2()) == 0)) {
 
+        };
+        return false;
+    }
+    
 }
