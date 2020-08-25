@@ -32,19 +32,13 @@ public class Retangulo {
     public void setAltura(Reta altura) {
         this.altura = altura;
     }
-    
-    // TODO
-    //    Diagrama de Sequencia do teste de reta
-    //    Implementar a classe retângulo (conforme diagrama no staruml)
-    //    Testar a classe retângulo
-    //    Diagrama de sequencia da classe retangulo
         
     public Double getArea() {
         return (this.base.getTamanho() * this.altura.getTamanho());
     }
     
     public Double getPerimetro() {
-        return (2 * this.base.getTamanho()) + (2 * this.altura.getTamanho());
+        return (2 * (this.base.getTamanho() + this.altura.getTamanho()));
     }
 
 }

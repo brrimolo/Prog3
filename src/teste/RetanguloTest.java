@@ -1,5 +1,6 @@
 package teste;
 
+import model.Reta;
 import model.Retangulo;
 
 /**
@@ -9,9 +10,16 @@ import model.Retangulo;
 public class RetanguloTest {
     
         public static void main(String args[]) {
-            
-                Retangulo r1 = new Retangulo(3.0,10.0,2.0,11.0,1.0,3.0,10.0,11.0);
-                System.out.println(r1.getPerimetro());
+                
+                Reta reta1 = new Reta(0.0,0.0,5.0,0.0);
+                Reta reta2 = new Reta(0.0,0.0,0.0,8.0);
+                Retangulo r1 = new Retangulo(0.0,0.0,5.0,0.0,0.0,0.0,0.0,8.0);
+                Retangulo r2 = new Retangulo(reta1, reta2);
+                System.out.println("Perimetro R1...: " + r1.getPerimetro());
+                System.out.println("Area R1........: " + r1.getArea());
+                System.out.println("Perimetro R2...: " + r2.getPerimetro());
+                System.out.println("Area R2........: " + r2.getArea());
+
         }
         
 }
