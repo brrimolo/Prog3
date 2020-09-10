@@ -15,6 +15,23 @@ public class Retangulo {
                 this.base = new Reta(x1,y1,x2,y2);
                 this.altura = new Reta(x3,y3,x4,y4);
         }
+        public Retangulo(Ponto p1, Ponto p2, Ponto p3) {
+                if(!(p2.getX().equals(p1.getX()))) {
+                    throw new IllegalArgumentException("Os valores X de p1 e p2 tem que ser iguais !");
+                }
+                if(!(p2.getY().equals(p3.getY()))) {
+                    throw new IllegalArgumentException("Os valores Y de p2 e p3 tem que ser iguais !");
+                }
+                if(p2.getX()>=p3.getX()) {
+                    throw new IllegalArgumentException("O ponto 3 tem que ter X  maior que o ponto 2 !");
+                }
+                if(p2.getY()>=p1.getY()) {
+                    throw new IllegalArgumentException("O ponto 1 tem que ter Y maior que o ponto 2 !");
+                }
+                this.base = new Reta(p2, p3);
+                this.altura = new Reta(p2, p1);
+        }
+
     // Métodos de acesso
     public Reta getBase() {
         return base;

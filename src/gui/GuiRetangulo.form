@@ -25,31 +25,40 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
+              <EmptySpace pref="30" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblPonto1" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPonto2" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblPonto4" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblPonto3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblY1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldY1" max="32767" attributes="0"/>
-                                  </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblX2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldX2" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Component id="txtX2" min="-2" pref="135" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblY2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldY2" min="-2" pref="135" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldX1" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <Component id="txtY2" min="-2" pref="135" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
@@ -57,49 +66,46 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblX3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldX3" pref="135" max="32767" attributes="0"/>
+                                      <Component id="txtX3" pref="135" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="lblY3" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldY3" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblY4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldY4" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="txtFldX4" max="32767" attributes="0"/>
+                                      <Component id="txtY3" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="btnCalcPerimetro" alignment="0" min="-2" pref="189" max="-2" attributes="0"/>
-                                  <Component id="btnCalcArea" min="-2" pref="189" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblY1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtY1" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblX1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtX1" min="-2" pref="135" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblY4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtY4" pref="135" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="lblX4" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="txtX4" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="txtFldArea" min="-2" pref="190" max="-2" attributes="0"/>
-                          <Component id="txtFldPerimetro" min="-2" pref="190" max="-2" attributes="0"/>
-                      </Group>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-              <Component id="txtFldRetangulo" min="-2" pref="276" max="-2" attributes="0"/>
-              <EmptySpace pref="102" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -109,52 +115,63 @@
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblX1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldX1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtX1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblX4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldX4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtX4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblY1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtFldY1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtY1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="txtFldY4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtY4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblY4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="txtFldRetangulo" min="-2" pref="75" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblX3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldX2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldX3" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                      <Component id="txtFldY3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblY3" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="lblPonto1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lblPonto2" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                      <Component id="txtFldY2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="lblPonto4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="lblPonto3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="54" max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnCalcArea" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldArea" alignment="3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtX3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtY3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtX2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnCalcPerimetro" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtFldPerimetro" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="16" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -165,12 +182,15 @@
         <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldX1">
+    <Component class="javax.swing.JTextField" name="txtX1">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="txtY1"/>
+        </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtFldX1KeyReleased"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtX1KeyReleased"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblY1">
@@ -178,12 +198,15 @@
         <Property name="text" type="java.lang.String" value="Y"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldY1">
+    <Component class="javax.swing.JTextField" name="txtY1">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="txtY2"/>
+        </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtFldY1KeyReleased"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtY1KeyReleased"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblX2">
@@ -191,7 +214,7 @@
         <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldX2">
+    <Component class="javax.swing.JTextField" name="txtX2">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="horizontalAlignment" type="int" value="4"/>
@@ -203,12 +226,15 @@
         <Property name="text" type="java.lang.String" value="Y"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldY2">
+    <Component class="javax.swing.JTextField" name="txtY2">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="txtX3"/>
+        </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtFldY2KeyReleased"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtY2KeyReleased"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblX3">
@@ -216,12 +242,15 @@
         <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldX3">
+    <Component class="javax.swing.JTextField" name="txtX3">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
+        <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+          <ComponentRef name="txtX1"/>
+        </Property>
       </Properties>
       <Events>
-        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtFldX3KeyReleased"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtX3KeyReleased"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblY3">
@@ -229,54 +258,11 @@
         <Property name="text" type="java.lang.String" value="Y"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldY3">
+    <Component class="javax.swing.JTextField" name="txtY3">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="focusable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtFldRetangulo">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="33" green="33" red="33" type="rgb"/>
-        </Property>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder>
-              <Color PropertyName="color" blue="0" green="0" red="66" type="rgb"/>
-            </LineBorder>
-          </Border>
-        </Property>
-        <Property name="enabled" type="boolean" value="false"/>
-        <Property name="focusable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnCalcArea">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Calcular &#xc1;rea"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcAreaActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtFldArea">
-      <Properties>
-        <Property name="horizontalAlignment" type="int" value="4"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnCalcPerimetro">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Calcular Per&#xed;metro"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcPerimetroActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtFldPerimetro">
-      <Properties>
-        <Property name="horizontalAlignment" type="int" value="4"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblX4">
@@ -284,7 +270,7 @@
         <Property name="text" type="java.lang.String" value="X"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldX4">
+    <Component class="javax.swing.JTextField" name="txtX4">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="horizontalAlignment" type="int" value="4"/>
@@ -296,11 +282,206 @@
         <Property name="text" type="java.lang.String" value="Y"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtFldY4">
+    <Component class="javax.swing.JTextField" name="txtY4">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder thickness="2"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel2" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+                <MatteColorBorder bottom="2" left="2" right="0" top="0">
+                  <Color PropertyName="color" blue="ff" green="33" red="0" type="rgb"/>
+                </MatteColorBorder>
+              </Border>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblAltura" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                              <Component id="lblBase" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="99" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="58" max="32767" attributes="0"/>
+                      <Component id="lblAltura" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="lblBase" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblAltura">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="altura"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblBase">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="base"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+            <EtchetBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="btnCalcular" min="-2" pref="135" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblPerimetro" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblArea" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtFldArea" min="-2" pref="133" max="-2" attributes="0"/>
+                      <Component id="txtFldPerimetro" min="-2" pref="133" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="txtFldArea" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblArea" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="txtFldPerimetro" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblPerimetro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="btnCalcular" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="txtFldArea">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="txtFldPerimetro">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="horizontalAlignment" type="int" value="4"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblArea">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#xc1;rea:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblPerimetro">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Per&#xed;metro:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btnCalcular">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Calcular"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCalcularActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblPonto1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ponto 1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPonto2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ponto 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPonto3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ponto 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblPonto4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ponto 4"/>
       </Properties>
     </Component>
   </SubComponents>

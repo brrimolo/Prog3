@@ -1,5 +1,7 @@
 package gui;
 
+import javax.swing.JOptionPane;
+import model.Ponto;
 import model.Retangulo;
 
 /**
@@ -25,175 +27,281 @@ public class GuiRetangulo extends javax.swing.JFrame {
     private void initComponents() {
 
         lblX1 = new javax.swing.JLabel();
-        txtFldX1 = new javax.swing.JTextField();
+        txtX1 = new javax.swing.JTextField();
         lblY1 = new javax.swing.JLabel();
-        txtFldY1 = new javax.swing.JTextField();
+        txtY1 = new javax.swing.JTextField();
         lblX2 = new javax.swing.JLabel();
-        txtFldX2 = new javax.swing.JTextField();
+        txtX2 = new javax.swing.JTextField();
         lblY2 = new javax.swing.JLabel();
-        txtFldY2 = new javax.swing.JTextField();
+        txtY2 = new javax.swing.JTextField();
         lblX3 = new javax.swing.JLabel();
-        txtFldX3 = new javax.swing.JTextField();
+        txtX3 = new javax.swing.JTextField();
         lblY3 = new javax.swing.JLabel();
-        txtFldY3 = new javax.swing.JTextField();
-        txtFldRetangulo = new javax.swing.JTextField();
-        btnCalcArea = new javax.swing.JButton();
-        txtFldArea = new javax.swing.JTextField();
-        btnCalcPerimetro = new javax.swing.JButton();
-        txtFldPerimetro = new javax.swing.JTextField();
+        txtY3 = new javax.swing.JTextField();
         lblX4 = new javax.swing.JLabel();
-        txtFldX4 = new javax.swing.JTextField();
+        txtX4 = new javax.swing.JTextField();
         lblY4 = new javax.swing.JLabel();
-        txtFldY4 = new javax.swing.JTextField();
+        txtY4 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        lblAltura = new javax.swing.JLabel();
+        lblBase = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        txtFldArea = new javax.swing.JTextField();
+        txtFldPerimetro = new javax.swing.JTextField();
+        lblArea = new javax.swing.JLabel();
+        lblPerimetro = new javax.swing.JLabel();
+        btnCalcular = new javax.swing.JButton();
+        lblPonto1 = new javax.swing.JLabel();
+        lblPonto2 = new javax.swing.JLabel();
+        lblPonto3 = new javax.swing.JLabel();
+        lblPonto4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Retângulo");
 
         lblX1.setText("X");
 
-        txtFldX1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldX1.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtX1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtX1.setNextFocusableComponent(txtY1);
+        txtX1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtFldX1KeyReleased(evt);
+                txtX1KeyReleased(evt);
             }
         });
 
         lblY1.setText("Y");
 
-        txtFldY1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldY1.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtY1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtY1.setNextFocusableComponent(txtY2);
+        txtY1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtFldY1KeyReleased(evt);
+                txtY1KeyReleased(evt);
             }
         });
 
         lblX2.setText("X");
 
-        txtFldX2.setEditable(false);
-        txtFldX2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldX2.setFocusable(false);
+        txtX2.setEditable(false);
+        txtX2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtX2.setFocusable(false);
 
         lblY2.setText("Y");
 
-        txtFldY2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldY2.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtY2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtY2.setNextFocusableComponent(txtX3);
+        txtY2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtFldY2KeyReleased(evt);
+                txtY2KeyReleased(evt);
             }
         });
 
         lblX3.setText("X");
 
-        txtFldX3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldX3.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtX3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtX3.setNextFocusableComponent(txtX1);
+        txtX3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtFldX3KeyReleased(evt);
+                txtX3KeyReleased(evt);
             }
         });
 
         lblY3.setText("Y");
 
-        txtFldY3.setEditable(false);
-        txtFldY3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldY3.setFocusable(false);
-
-        txtFldRetangulo.setEditable(false);
-        txtFldRetangulo.setBackground(new java.awt.Color(51, 51, 51));
-        txtFldRetangulo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 0, 0)));
-        txtFldRetangulo.setEnabled(false);
-        txtFldRetangulo.setFocusable(false);
-
-        btnCalcArea.setText("Calcular Área");
-        btnCalcArea.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalcAreaActionPerformed(evt);
-            }
-        });
-
-        txtFldArea.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-
-        btnCalcPerimetro.setText("Calcular Perímetro");
-        btnCalcPerimetro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalcPerimetroActionPerformed(evt);
-            }
-        });
-
-        txtFldPerimetro.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtY3.setEditable(false);
+        txtY3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtY3.setFocusable(false);
 
         lblX4.setText("X");
 
-        txtFldX4.setEditable(false);
-        txtFldX4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldX4.setFocusable(false);
+        txtX4.setEditable(false);
+        txtX4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtX4.setFocusable(false);
 
         lblY4.setText("Y");
 
-        txtFldY4.setEditable(false);
-        txtFldY4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        txtFldY4.setFocusable(false);
+        txtY4.setEditable(false);
+        txtY4.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtY4.setFocusable(false);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 2, 2, 0, new java.awt.Color(0, 51, 255)));
+
+        lblAltura.setText("altura");
+
+        lblBase.setText("base");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblAltura))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(133, 133, 133)
+                        .addComponent(lblBase)))
+                .addContainerGap(99, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(58, Short.MAX_VALUE)
+                .addComponent(lblAltura)
+                .addGap(36, 36, 36)
+                .addComponent(lblBase)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        txtFldArea.setEditable(false);
+        txtFldArea.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        txtFldPerimetro.setEditable(false);
+        txtFldPerimetro.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        lblArea.setText("Área:");
+
+        lblPerimetro.setText("Perímetro:");
+
+        btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnCalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPerimetro)
+                    .addComponent(lblArea))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtFldArea, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFldPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtFldArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblArea))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtFldPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblPerimetro))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCalcular)
+                        .addGap(19, 19, 19))))
+        );
+
+        lblPonto1.setText("Ponto 1");
+
+        lblPonto2.setText("Ponto 2");
+
+        lblPonto3.setText("Ponto 3");
+
+        lblPonto4.setText("Ponto 4");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap(30, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPonto1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblPonto2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblPonto4)
+                    .addComponent(lblPonto3))
+                .addGap(20, 20, 20))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblY1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldY1))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblX2)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldX2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtX2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblY2)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldY2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblX1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldX1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtY2, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblX3)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldX3, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE))
+                                        .addComponent(txtX3, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblY3)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldY3))
+                                        .addComponent(txtY3))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblY1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtY1))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblX1)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(txtX1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblY4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldY4))
+                                        .addComponent(txtY4, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(lblX4)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtFldX4))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(15, 15, 15)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnCalcPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnCalcArea, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtFldArea, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFldPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(37, 37, 37))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(txtFldRetangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(102, Short.MAX_VALUE))
+                                        .addComponent(txtX4)))))
+                        .addGap(22, 22, 22))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,92 +309,108 @@ public class GuiRetangulo extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblX1)
-                    .addComponent(txtFldX1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtX1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblX4)
-                    .addComponent(txtFldX4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtX4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblY1)
-                        .addComponent(txtFldY1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(txtY1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtFldY4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtY4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(lblY4)))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblPonto1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblPonto2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblPonto4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblPonto3)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(txtFldRetangulo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX3)
+                            .addComponent(txtX3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtY3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY3)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX2)
+                            .addComponent(txtX2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtY2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY2))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX2)
-                    .addComponent(lblX3)
-                    .addComponent(txtFldX2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtFldX3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtFldY3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblY3))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtFldY2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblY2)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCalcArea)
-                    .addComponent(txtFldArea, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCalcPerimetro)
-                    .addComponent(txtFldPerimetro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCalcAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcAreaActionPerformed
-        // TODO add your handling code here:
-        Double x1 = Double.parseDouble(txtFldX1.getText());
-        Double x2 = Double.parseDouble(txtFldX2.getText());
-        Double x3 = Double.parseDouble(txtFldX3.getText());
-        Double y1 = Double.parseDouble(txtFldY1.getText());
-        Double y2 = Double.parseDouble(txtFldY2.getText());
-        Double y3 = Double.parseDouble(txtFldY3.getText());
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         
-        Retangulo retangulo = new Retangulo(x3,y3,x2,y2,x2,y2,x1,y1);
-        txtFldArea.setText(retangulo.getArea().toString());
-    }//GEN-LAST:event_btnCalcAreaActionPerformed
-
-    private void txtFldY2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFldY2KeyReleased
-        // TODO add your handling code here:
-        txtFldY3.setText(txtFldY2.getText());
-    }//GEN-LAST:event_txtFldY2KeyReleased
-
-    private void txtFldX1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFldX1KeyReleased
-        // TODO add your handling code here:
-        txtFldX2.setText(txtFldX1.getText());
-    }//GEN-LAST:event_txtFldX1KeyReleased
-
-    private void btnCalcPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcPerimetroActionPerformed
-        // TODO add your handling code here:
-        Double x1 = Double.parseDouble(txtFldX1.getText());
-        Double x2 = Double.parseDouble(txtFldX2.getText());
-        Double x3 = Double.parseDouble(txtFldX3.getText());
-        Double y1 = Double.parseDouble(txtFldY1.getText());
-        Double y2 = Double.parseDouble(txtFldY2.getText());
-        Double y3 = Double.parseDouble(txtFldY3.getText());
+        Double x1, y1, x2, y2, x3, y3;
+        try {
+            x1 = Double.parseDouble(txtX1.getText());
+            y1 = Double.parseDouble(txtY1.getText());
+            x2 = Double.parseDouble(txtX2.getText());
+            y2 = Double.parseDouble(txtY2.getText());
+            x3 = Double.parseDouble(txtX3.getText());
+            y3 = Double.parseDouble(txtY3.getText());
+            
+            Ponto p1 = new Ponto(x1, y1);
+            Ponto p2 = new Ponto(x2, y2);
+            Ponto p3 = new Ponto(x3, y3);
+            
+            Retangulo r1;
+            try {
+                r1 = new Retangulo(p1, p2, p3);
+            } catch (IllegalArgumentException i) {
+                JOptionPane.showMessageDialog(null, i.getMessage());
+                return;
+            }
+            
+            lblAltura.setText(r1.getAltura().getTamanho().toString());
+            lblBase.setText(r1.getBase().getTamanho().toString());
+            txtFldArea.setText(r1.getArea().toString());
+            txtFldPerimetro.setText(r1.getPerimetro().toString());
+            
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "Verifique se as coordenadas foram preenchidas corretamente");
+        }
         
-        Retangulo retangulo = new Retangulo(x2,y2,x3,y3,x2,y2,x1,y1);
-        txtFldPerimetro.setText(retangulo.getPerimetro().toString());
-    }//GEN-LAST:event_btnCalcPerimetroActionPerformed
+        
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
-    private void txtFldX3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFldX3KeyReleased
-        // TODO add your handling code here:
-        txtFldX4.setText(txtFldX3.getText());
-    }//GEN-LAST:event_txtFldX3KeyReleased
+    private void txtY2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtY2KeyReleased
+        
+        txtY3.setText(txtY2.getText());
+    }//GEN-LAST:event_txtY2KeyReleased
 
-    private void txtFldY1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtFldY1KeyReleased
-        // TODO add your handling code here:
-        txtFldY4.setText(txtFldY1.getText());
-    }//GEN-LAST:event_txtFldY1KeyReleased
+    private void txtX1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtX1KeyReleased
+        
+        txtX2.setText(txtX1.getText());
+    }//GEN-LAST:event_txtX1KeyReleased
+
+    private void txtX3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtX3KeyReleased
+        
+        txtX4.setText(txtX3.getText());
+    }//GEN-LAST:event_txtX3KeyReleased
+
+    private void txtY1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtY1KeyReleased
+        
+        txtY4.setText(txtY1.getText());
+    }//GEN-LAST:event_txtY1KeyReleased
 
     /**
      * @param args the command line arguments
@@ -324,8 +448,18 @@ public class GuiRetangulo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCalcArea;
-    private javax.swing.JButton btnCalcPerimetro;
+    private javax.swing.JButton btnCalcular;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lblAltura;
+    private javax.swing.JLabel lblArea;
+    private javax.swing.JLabel lblBase;
+    private javax.swing.JLabel lblPerimetro;
+    private javax.swing.JLabel lblPonto1;
+    private javax.swing.JLabel lblPonto2;
+    private javax.swing.JLabel lblPonto3;
+    private javax.swing.JLabel lblPonto4;
     private javax.swing.JLabel lblX1;
     private javax.swing.JLabel lblX2;
     private javax.swing.JLabel lblX3;
@@ -336,14 +470,13 @@ public class GuiRetangulo extends javax.swing.JFrame {
     private javax.swing.JLabel lblY4;
     private javax.swing.JTextField txtFldArea;
     private javax.swing.JTextField txtFldPerimetro;
-    private javax.swing.JTextField txtFldRetangulo;
-    private javax.swing.JTextField txtFldX1;
-    private javax.swing.JTextField txtFldX2;
-    private javax.swing.JTextField txtFldX3;
-    private javax.swing.JTextField txtFldX4;
-    private javax.swing.JTextField txtFldY1;
-    private javax.swing.JTextField txtFldY2;
-    private javax.swing.JTextField txtFldY3;
-    private javax.swing.JTextField txtFldY4;
+    private javax.swing.JTextField txtX1;
+    private javax.swing.JTextField txtX2;
+    private javax.swing.JTextField txtX3;
+    private javax.swing.JTextField txtX4;
+    private javax.swing.JTextField txtY1;
+    private javax.swing.JTextField txtY2;
+    private javax.swing.JTextField txtY3;
+    private javax.swing.JTextField txtY4;
     // End of variables declaration//GEN-END:variables
 }
